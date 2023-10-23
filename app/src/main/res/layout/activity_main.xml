@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="right|center"
+        android:inputType="textPersonName"
+        android:text="@string/_0"
+        android:textSize="30sp"
+        tools:ignore="LabelFor,RtlHardcoded,DuplicateSpeakableTextCheck,VisualLintTextFieldSize" />
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:rowCount="6"
+        android:columnCount="4"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Row 1 -->
+        <Button
+            android:id="@+id/buttonAC"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:onClick="hanap"
+            android:text="@string/ac"
+            android:textSize="18sp"
+            android:background="#FF9800"
+            android:textColor="#000000"
+            android:stateListAnimator="@null"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/buttonback"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:onClick="erisa"
+            android:text="@string/erisa"
+            android:textSize="18sp"
+            android:background="#FF9800"
+            android:textColor="#000000"
+            android:stateListAnimator="@null"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/buttonmod"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:onClick="percent"
+            android:text="@string/percent"
+            android:textSize="18sp"
+            android:background="#FF9800"
+            android:textColor="#000000"
+            android:stateListAnimator="@null"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/buttonmultiply"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:onClick="vinot"
+            android:text="@string/multi"
+            android:textSize="18sp"
+            android:background="#03A9F4"
+            android:textColor="#000000"
+            android:stateListAnimator="@null"
+            tools:ignore="VisualLintButtonSize" />
+
+        <!-- Row 2 -->
+        <Button
+            android:id="@+id/buttonsqaure"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:onClick="sqaure"
+            android:text="@string/sqaure"
+            android:textSize="18sp"
+            android:background="#FFC107"
+            android:textColor="#000000"
+            android:stateListAnimator="@null"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/buttonppowern"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:onClick="powerN"
+            android:text="@string/x"
+            android:textSize="18sp"
+            android:background="#FFC107"
+            android:textColor="#000000"
+            android:stateListAnimator="@null"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/buttonx"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:onClick="exponent"
+            android:text="@string/exponent"
+            android:textSize="18sp"
+            android:background="#FFC107"
+            android:textColor="#000000"
+            android:stateListAnimator="@null"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/buttonplus"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:onClick="vinot"
+            android:text="@string/plus"
+            android:textSize="18sp"
+            android:background="#03A9F4"
+            android:textColor="#000000"
+            android:stateListAnimator="@null"
+            tools:ignore="VisualLintButtonSize" />
+
+        <!-- Row 3 -->
+        <Button
+            android:id="@+id/button7"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:onClick="kelvin"
+            android:text="@string/_7"
+            android:textSize="18sp"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:stateListAnimator="@null"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/button8"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:text="@string/_8"
+            android:textSize="18sp"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:stateListAnimator="@null"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/button9"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:text="@string/_9"
+            android:textSize="18sp"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:stateListAnimator="@null"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/buttondivide"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:onClick="vinot"
+            android:text="@string/debayd"
+            android:textSize="18sp"
+            android:background="#03A9F4"
+            android:textColor="#000000"
+            android:stateListAnimator="@null"
+            tools:ignore="VisualLintButtonSize" />
+
+        <!-- Row 4 -->
+        <Button
+            android:id="@+id/button4"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:text="@string/_4"
+            android:textSize="18sp"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:stateListAnimator="@null"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/button5"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:text="@string/_5"
+            android:textSize="18sp"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:stateListAnimator="@null"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/button6"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:text="@string/_6"
+            android:textSize="18sp"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:stateListAnimator="@null"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/buttonminus"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:text="@string/minus"
+            android:textSize="18sp"
+            android:background="#03A9F4"
+            android:textColor="#000000"
+            android:stateListAnimator="@null"
+            tools:ignore="VisualLintButtonSize" />
+
+        <!-- Row 5 -->
+        <Button
+            android:id="@+id/button1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:text="@string/_1"
+            android:textSize="18sp"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:stateListAnimator="@null"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/button2"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:text="@string/_2"
+            android:textSize="18sp"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:stateListAnimator="@null"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/button3"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:text="@string/_3"
+            android:textSize="18sp"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:stateListAnimator="@null"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/buttondot"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:text="@string/dot"
+            android:textSize="18sp"
+            android:background="#03A9F4"
+            android:textColor="#000000"
+            android:stateListAnimator="@null"
+            tools:ignore="VisualLintButtonSize" />
+
+        <!-- Row 6 -->
+        <Button
+            android:id="@+id/button0"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:text="@string/zero"
+            android:textSize="18sp"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:stateListAnimator="@null"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/buttonequal"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:onClick="Vinskie"
+            android:text="@string/equal"
+            android:textSize="18sp"
+            android:background="#8BC34A"
+            android:textColor="#000000"
+            android:stateListAnimator="@null"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/buttonreciprocal"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:onClick="Reciprocal"
+            android:text="@string/_1_x"
+            android:textSize="18sp"
+            android:background="#03A9F4"
+            android:textColor="#000000"
+            tools:ignore="VisualLintButtonSize" />
+
+    </GridLayout>
+</LinearLayout>
